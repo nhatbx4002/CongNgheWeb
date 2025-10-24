@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechZone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">TechZone</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Trang chủ</a></li>
+          <li><a href="#products">Sản phẩm</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+          <li><a href="#signup" class="signup-btn">Đăng ký</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="intro" id="home">
+      <h1>Khám phá thế giới công nghệ hiện đại</h1>
+      <p>TechZone mang đến những sản phẩm công nghệ mới nhất – từ tai nghe không dây, bàn phím cơ cho đến các phụ kiện thông minh, giúp cuộc sống của bạn tiện nghi hơn bao giờ hết.</p>
+    </section>
+    <section class="products-section" id="products">
+      <h2>Sản phẩm nổi bật</h2>
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="./images/1.jpeg" alt="Tai nghe Bluetooth AirPods Pro 2">
+          </div>
+          <div class="product-info">
+            <h3>Tai nghe Bluetooth AirPods Pro 2</h3>
+            <p>Chống ồn chủ động, kết nối nhanh, thời lượng pin ấn tượng.</p>
+            <div class="product-price">5.990.000₫</div>
+            <button class="buy-btn">Thêm vào giỏ hàng</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <img src="./images/2.jpeg" alt="Bàn phím cơ Akko 3087 V2">
+          </div>
+          <div class="product-info">
+            <h3>Bàn phím cơ Akko 3087 V2</h3>
+            <p>Switch TTC Gold, layout TKL gọn gàng, độ hoàn thiện cao.</p>
+            <div class="product-price">1.990.000₫</div>
+            <button class="buy-btn">Thêm vào giỏ hàng</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="./images/3.jpeg" alt="Chuột Logitech G Pro X Superlight 2">
+          </div>
+          <div class="product-info">
+            <h3>Chuột Logitech G Pro X Superlight 2</h3>
+            <p>Trọng lượng siêu nhẹ chỉ 60g, cảm biến HERO 2 chính xác tuyệt đối.</p>
+            <div class="product-price">3.290.000₫</div>
+            <button class="buy-btn">Thêm vào giỏ hàng</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Liên hệ với chúng tôi</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Họ và tên</label>
+          <input type="text" id="name" name="name" required placeholder="Nhập họ tên của bạn">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="email@domain.com">
+        </div>
+        <div class="form-group">
+          <label for="message">Lời nhắn</label>
+          <textarea id="message" name="message" required placeholder="Nội dung liên hệ..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Gửi</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 TechZone.</p>
+      <p class="footer-contact">Địa chỉ: Đông Sơn, Thủy Nguyên , Hải Phòng · Hotline: 0987 123 456</p>
+    </div>
+  </footer>
+</body>
+</html>
