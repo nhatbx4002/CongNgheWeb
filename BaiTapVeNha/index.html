@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB API</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="grain"></div>
+  <main class="frame">
+    <header class="banner">
+      <div>
+        <p class="eyebrow">JSONPlaceholder - Axios - Async/Await</p>
+        <h1>Web API</h1>
+      </div>
+      <button id="refreshBtn" class="ghost">Sync</button>
+    </header>
+
+    <div id="message" class="message" role="status"></div>
+
+    <section class="toolbar">
+      <div class="field">
+        <label for="searchInput">Search by name</label>
+        <input id="searchInput" type="search" placeholder="Start typing...">
+      </div>
+    </section>
+
+    <section class="grid">
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Create</p>
+            <h2>Add User</h2>
+          </div>
+        </div>
+        <form id="addForm" class="stack">
+          <label class="field">
+            <span>Name</span>
+            <input name="name" placeholder="Ada Lovelace" required>
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input name="email" type="email" placeholder="ada@compute.io" required>
+          </label>
+          <label class="field">
+            <span>Phone</span>
+            <input name="phone" placeholder="(555) 123-4567" required>
+          </label>
+          <button type="submit" class="cta">Add user</button>
+        </form>
+      </section>
+
+      <section class="panel table-panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Read / Update / Delete</p>
+            <h2>Users</h2>
+          </div>
+          <p class="count" id="countLabel">0 users</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th class="actions">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="userBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <div id="editModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <header class="modal-head">
+        <h3>Edit User</h3>
+        <button class="ghost" data-close>X</button>
+      </header>
+      <form id="editForm" class="stack">
+        <input type="hidden" name="id">
+        <label class="field">
+          <span>Name</span>
+          <input name="name" required>
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input name="email" type="email" required>
+        </label>
+        <label class="field">
+          <span>Phone</span>
+          <input name="phone" required>
+        </label>
+        <div class="modal-actions">
+          <button type="button" class="ghost" data-close>Cancel</button>
+          <button type="submit" class="cta">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
